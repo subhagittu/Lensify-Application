@@ -1,0 +1,154 @@
+import json
+
+def generate_test_cases(json_file):
+    with open(json_file, 'r') as f:
+        data = json.load(f)
+
+    test_cases = []
+    for image in data['images']:
+        test_case = {
+            'id': image['id'],
+            'url': image['url']
+        }
+        test_cases.append(test_case)
+
+    return test_cases
+
+def main():
+    json_file = 'test.json'
+    test_cases = generate_test_cases(json_file)
+
+    print("Generated Test Cases:")
+    for test_case in test_cases:
+        print(f"ID: {test_case['id']}, URL: {test_case['url']}")
+
+if __name__ == "__main__":
+    main()
+
+
+
+{
+    "images": [
+      {
+        "id": 1,
+        "url": "Images/image1.jpg",
+        "output": "Agra Fort",
+        "Error": "No",
+      },
+      {
+        "id": 2,
+        "url": "Images/image2.jpg",
+        "output": "Jantar Mantar",
+        "Error": "No",
+      },
+      {
+        "id": 3,
+        "url": "Images/image3.jpg",
+        "output": "Qutub Minar Complex",
+        "Error": "No",
+      },
+      {
+        "id": 4,
+        "url": "Images/image4.jpg",
+        "output": "Shaolin Temple",
+        "Error": "No",
+      },
+      {
+        "id": 5,
+        "url": "Images/image5.jpg",
+        "output": "Taj Mahal",
+        "Error": "No",
+      },
+      {
+        "id": 6,
+        "url": "Images/image6.jpg",
+        "output": "Ajanta Caves",
+        "Error": "No",
+      },
+      {
+        "id": 7,
+        "url": "Images/image7.jpg",
+        "output": "Red Fort",
+        "Error": "No",
+      },
+      {
+        "id": 8,
+        "url": "Images/image8.jpg",
+        "output": "India Gate",
+        "Error": "No",
+      },
+      {
+        "id": 9,
+        "url": "Images/image9.jpg",
+        "output": "Tokyo Tower",
+        "Error": "No",
+      },
+      {
+        "id": 10,
+        "url": "Images/image10.jpg",
+        "output": "Victoria Memorial",
+        "Error": "No",
+      },
+      {
+        "id": 11,
+        "url": "Images/image11.jpg",
+        "output": "Vivekananda House",
+        "Error": "No",
+      },
+      {
+        "id": 12,
+        "url": "Images/image12.jpg",
+        "output": "Akal Takht",
+        "Error": "Yes",
+      },
+      {
+        "id": 13,
+        "url": "Images/image13.jpg",
+        "output": "Hawa Mahal",
+        "Error": "No",
+      },
+      {
+        "id": 14,
+        "url": "Images/image14.jpg",
+        "output": "Gateway Of India Mumbai",
+        "Error": "No",
+      },
+      {
+        "id": 15,
+        "url": "Images/image15.jpg",
+        "output": "Great Sphinx of Giza",
+        "Error": "No",
+      },
+      {
+        "id": 16,
+        "url": "Images/image16.jpg",
+        "output": "Harichavank",
+        "Error": "No",
+      },
+      {
+        "id": 17,
+        "url": "Images/image17.jpg",
+        "output": "Tomb of Akbar the Great",
+        "Error": "No",
+      },
+      {
+        "id": 18,
+        "url": "Images/image18.jpg",
+        "output": "Lotus Temple",
+        "Error": "No",
+      },
+      {
+        "id": 19,
+        "url": "Images/image19.jpg",
+        "output": "Christ Church, Shimla",
+        "Error": "No",
+      }
+      {
+        "id": 20,
+        "url": "Images/image20.jpg",
+        "output": "Shanhua Temple",
+        "Error": "No",
+      }
+    ]
+  }
+  
