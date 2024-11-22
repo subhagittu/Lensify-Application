@@ -167,23 +167,7 @@ def home():
         # Displaying the hyperlink in Streamlit
         st.subheader(f"[📌Direction to {prediction}]({directions_url})")
 
-# About page
-def about():
-    st.title("About Us")
 
-    st.subheader(
-        "Welcome to Lensify!\n"
-        "I am Sourin Mukherjee with my team, dedicated to providing you with accurate name and location of your uploaded image\n"
-    )
-
-    # Insert an image from a local file
-
-    sir_image = "Images/sir_image.png"
-    st.image(sir_image, use_column_width=True)
-    team_image = "Images/team.png"
-    st.image(team_image, use_column_width=True)
-
-    st.success("Thank you for choosing our Weather App!")
 
 # Contact Us page
 def contact_us():
