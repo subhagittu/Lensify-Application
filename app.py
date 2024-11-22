@@ -18,7 +18,7 @@ st.set_page_config(
 
 # Navbar
 def navigation():
-    page_options = ["Home", "About", "Contact Us"]
+    page_options = ["Home", "Contact Us"]
     selected_page = st.sidebar.radio("Navigation", page_options)
     return selected_page
 
